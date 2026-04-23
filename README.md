@@ -121,22 +121,4 @@ Stores limited history using additional columns.
 
 ---
 
-## 🚀 Quick Memory Trick
-
-- **Type 0:** Never change  
-- **Type 1:** Replace  
-- **Type 2:** Add new row  
-- **Type 3:** Add new column  
-
----
-
-## 📌 Summary
-
-SCD types help manage how dimension data changes over time in data warehouses:
-
-- Use **Type 0** for immutable data  
-- Use **Type 1** for simple corrections  
-- Use **Type 2** for full history tracking  
-- Use **Type 3** for limited history tracking  
-
----
+Show me real SQL implementation for SCD Type 1 & 2
