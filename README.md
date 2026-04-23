@@ -283,5 +283,14 @@ Account Table
 │
 ▼
 Transactions Table
----## 🧠 Why This WorksWith a bridge table, Power BI now has:✔ Only **one-to-many relationships**  ✔ No ambiguity in filtering  ✔ Correct aggregation logic  ---## ⚙️ How Filtering WorksWhen a user selects a Customer:1. Power BI finds matching rows in **Bridge Table**2. Bridge returns related **Account IDs**3. Accounts filter **Transactions**4. Transactions are correctly aggregated by Customer---## 🚀 Key Takeaway👉 A bridge table converts a **many-to-many relationship into two clean one-to-many relationships**, enabling accurate filtering and aggregation in Power BI.
+---## 🧠 Why This WorksWith a bridge table, Power BI now has:
+✔ Only **one-to-many relationships**  
+✔ No ambiguity in filtering  
+✔ Correct aggregation logic  
+---## ⚙️ How Filtering WorksWhen a user selects a Customer:
+1. Power BI finds matching rows in **Bridge Table**
+2. Bridge returns related **Account IDs**
+3. Accounts filter **Transactions**
+4. 4. Transactions are correctly aggregated by Customer
+---## 🚀 Key Takeaway👉 A bridge table converts a **many-to-many relationship into two clean one-to-many relationships**, enabling accurate filtering and aggregation in Power BI.
 
