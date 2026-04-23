@@ -229,3 +229,35 @@ Stores limited history using additional columns.
 | 3    | Partial                       | Last known change only |
 
 ---
+# 🔗 Bridge Table in Power BI (Many-to-Many Resolution)
+
+## 📌 What is a Bridge Table?
+
+A **bridge (mapping) table** is a lookup table that stores relationship pairs between two entities.
+
+👉 It defines **who is linked to what** in a many-to-many relationship.
+
+---
+
+## 📊 Example Bridge Table
+
+| CustomerID | AccountID |
+|------------|----------|
+| C001       | A100     |
+| C002       | A100     |
+| C001       | A200     |
+
+---
+
+## 🧠 Meaning of the Data
+
+- Customer **C001** has accounts **A100 and A200**
+- Customer **C002** has account **A100**
+- Account **A100** is shared by **C001 and C002**
+
+---
+
+## 🔌 How It Connects (VERY IMPORTANT)
+
+Instead of this ❌ (bad design):
+
