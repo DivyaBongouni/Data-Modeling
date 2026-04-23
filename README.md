@@ -260,4 +260,28 @@ A **bridge (mapping) table** is a lookup table that stores relationship pairs be
 ## 🔌 How It Connects (VERY IMPORTANT)
 
 Instead of this ❌ (bad design):
+Customer ↔ Account (Many-to-Many)
+We use this ✅ (correct model):
+Customer 1 → Many Bridge rows
+Account  1 → Many Bridge rows
+---## 🧩 Relationships in the Model### 1. Customer → Bridge
+Customer.CustomerID  ——  Bridge.CustomerID
+(1 to many)
+### 2. Account → Bridge
+Account.AccountID  ——  Bridge.AccountID
+(1 to many)
+---## 📊 Data Model Flow
+Customer Table
+│
+│ (1-to-many)
+▼
+Bridge Table
+▲
+│ (many-to-1)
+│
+Account Table
+│
+▼
+Transactions Table
+---## 🧠 Why This WorksWith a bridge table, Power BI now has:✔ Only **one-to-many relationships**  ✔ No ambiguity in filtering  ✔ Correct aggregation logic  ---## ⚙️ How Filtering WorksWhen a user selects a Customer:1. Power BI finds matching rows in **Bridge Table**2. Bridge returns related **Account IDs**3. Accounts filter **Transactions**4. Transactions are correctly aggregated by Customer---## 🚀 Key Takeaway👉 A bridge table converts a **many-to-many relationship into two clean one-to-many relationships**, enabling accurate filtering and aggregation in Power BI.
 
