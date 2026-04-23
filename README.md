@@ -215,11 +215,17 @@ Stores limited history using additional columns.
 
 ## ⚡ Quick Summary
 
-| Type | History Level | Real Use Focus |
-|------|--------------|----------------|
-| 0    | None         | Static reference data |
-| 1    | None         | Corrections / overwrites |
-| 2    | Full         | Auditing, analytics |
-| 3    | Partial      | Last known change only |
+
+- **Type 0:** Never change  
+- **Type 1:** OverwritesReplace  
+- **Type 2:** Add new row  
+- **Type 3:** Add new column  
+
+| Type | History Level                 | Real Use Focus           |
+|------|-------------------------------|--------------------------|
+| 0    | None                          | Static reference data |
+| 1    | Overwrites history(no history)| Corrections / overwrites |
+| 2    | Full                          | Auditing, analytics |
+| 3    | Partial                       | Last known change only |
 
 ---
