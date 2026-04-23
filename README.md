@@ -274,6 +274,7 @@ Account.AccountID  ——  Bridge.AccountID
 ---
 
 ### 3. Data Model Flow
+ ```
 Customer Table
 │
 │ (1-to-many)
@@ -286,5 +287,5 @@ Account Table
 │
 ▼
 Transactions Table
-
+ ```
 ---
