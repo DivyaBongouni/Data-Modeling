@@ -266,12 +266,14 @@ Account  1 → Many Bridge rows
 ### 1. Customer → Bridge
 Customer.CustomerID  ——  Bridge.CustomerID
 (1 to many)
+
 ### 2. Account → Bridge
 Account.AccountID  ——  Bridge.AccountID
 (1 to many)
+
 ---
 
-## 📊 Data Model Flow
+### 3. Data Model Flow
 Customer Table
 │
 │ (1-to-many)
@@ -284,4 +286,5 @@ Account Table
 │
 ▼
 Transactions Table
+
 ---
